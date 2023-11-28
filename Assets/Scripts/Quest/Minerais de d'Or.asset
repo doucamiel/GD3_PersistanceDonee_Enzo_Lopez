@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Minerais de d'Or
   m_EditorClassIdentifier: 
   Name: Or
-  MaxValue: 0
+  MaxValue: 2
   StartValue: 0
-  ActualValue: 4
+  ActualValue: 0
   CollectibleType: Or
   IsFinished: 0

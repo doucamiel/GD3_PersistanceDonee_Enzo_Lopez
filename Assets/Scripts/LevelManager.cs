@@ -7,7 +7,7 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] private ScoreDatas _ScoreData;
     [SerializeField] private Objectives[] _Objectives;
-
+    
     private void Start()
     {
         for (int i = 0; i < _Objectives.Length;)
@@ -18,5 +18,6 @@ public class LevelManager : MonoBehaviour
         }
         _ScoreData.InitScoreValue(0);
         SceneManager.LoadScene(0);
+        
     }
 }

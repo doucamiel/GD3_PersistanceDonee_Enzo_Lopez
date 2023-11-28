@@ -11,12 +11,12 @@ public class QuestData : ScriptableObject
 
     public void CheckQuest()
     {
-        //bool result = true;
+        bool result = true;
         for (int i = 0; i < Objectives.Length; i++)
         {
             if (!Objectives[i].IsFinished)
             {
-                //result = false;
+                result = false;
                 break;
             }
         }
@@ -47,9 +47,10 @@ public class QuestData : ScriptableObject
 
                 Objectives[i].ActualValue += 1;
                 CheckObjective(i);
+                IsFinished = false;
                 break;
             }
-
+            //IsFinished = true;
         }
     }
 }

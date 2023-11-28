@@ -18,4 +18,5 @@ public class Objectives : ScriptableObject
         ActualValue = StartValue;
     }
 
+   
 }

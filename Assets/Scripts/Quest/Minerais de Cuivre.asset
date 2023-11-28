@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: Cuivre
   MaxValue: 6
   StartValue: 0
-  ActualValue: 2
+  ActualValue: 1
   CollectibleType: Cuivre
   IsFinished: 0
