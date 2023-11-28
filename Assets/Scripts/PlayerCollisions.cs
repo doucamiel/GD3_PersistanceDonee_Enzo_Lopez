@@ -12,5 +12,21 @@ public class PlayerCollisions : MonoBehaviour
             iCollect.Collect();
             
         }
+
+        ITalk talking = other.GetComponent<ITalk>();
+        if (talking != null) 
+        {   
+            talking.Talk();
+         
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        ITalk talking = collision.gameObject.GetComponent<ITalk>();
+        if (talking != null) 
+        {
+            talking .Talk();    
+        }
     }
 }

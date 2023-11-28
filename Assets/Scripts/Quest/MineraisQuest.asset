@@ -17,4 +17,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 64cf138301cd63d4197b0316416d4e83, type: 2}
   - {fileID: 11400000, guid: 232d0abf71bccb847b65af337fb22aad, type: 2}
   IsStarted: 0
-  IsFinished: 1
+  IsFinished: 0

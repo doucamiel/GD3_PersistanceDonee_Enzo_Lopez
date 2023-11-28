@@ -11,12 +11,12 @@ public class QuestData : ScriptableObject
 
     public void CheckQuest()
     {
-        bool result = true;
+        //bool result = true;
         for (int i = 0; i < Objectives.Length; i++)
         {
             if (!Objectives[i].IsFinished)
             {
-                result = false;
+                //result = false;
                 break;
             }
         }
@@ -31,7 +31,7 @@ public class QuestData : ScriptableObject
     }
     public void CheckObjective(int NumObject)
     {
-        if (Objectives[NumObject].ActualValue == Objectives[NumObject].MaxValue)
+        if (Objectives[NumObject].ActualValue >= Objectives[NumObject].MaxValue)
         {
             Objectives[NumObject].IsFinished = true;
                 CheckQuest();
@@ -44,9 +44,12 @@ public class QuestData : ScriptableObject
         {
             if (Objectives[i].CollectibleType == collectible.GetCollectibleType())
             {
-                Objectives[i].ActualValue += collectible.GetCollectibleValue();
+
+                Objectives[i].ActualValue += 1;
+                CheckObjective(i);
+                break;
             }
-;
+
         }
     }
 }

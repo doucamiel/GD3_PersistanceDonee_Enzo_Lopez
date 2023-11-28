@@ -113,6 +113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _value: 1
   _scoreData: {fileID: 11400000, guid: 313b569cfdc21e5479019c5f0687cd77, type: 2}
+  _collectibleType: Cuivre
+  _questData: {fileID: 11400000, guid: bf54a9168b14aaf4ebccfc9ac2c5311b, type: 2}
 --- !u!1 &4197660769296200651
 GameObject:
   m_ObjectHideFlags: 0

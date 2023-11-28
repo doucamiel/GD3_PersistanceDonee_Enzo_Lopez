@@ -13,5 +13,9 @@ public class Objectives : ScriptableObject
     public string CollectibleType;
     public bool IsFinished;
 
+    public void InitObjectiveValue()
+    {
+        ActualValue = StartValue;
+    }
 
 }
