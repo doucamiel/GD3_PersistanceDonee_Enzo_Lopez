@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Objecties")]
+[CreateAssetMenu(menuName = "New Objective")]
 
 public class Objectives : ScriptableObject
 {
@@ -10,7 +10,8 @@ public class Objectives : ScriptableObject
     public int MaxValue;
     public int StartValue;
     public int ActualValue;
-    public bool IsFinished;
     public string CollectibleType;
+    public bool IsFinished;
+
 
 }
