@@ -10,10 +10,10 @@ public class LevelManager : MonoBehaviour
     
     private void Start()
     {
-        for (int i = 0; i < _Objectives.Length;)
+        for (int i = 0; i < _Objectives.Length; i++)
         {
             _Objectives[i].InitObjectiveValue();
-            i++;
+            _Objectives[i].IsFinished = false;
 
         }
         _ScoreData.InitScoreValue(0);
